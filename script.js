@@ -2,8 +2,7 @@
 let button = document.getElementById("btn");
 
 
-
-function year(){
+button.addEventListener("click", ()=>{
 	let input = document.getElementById("input").value;
 	if (input % 4 === 0) {
 		if (input % 100 === 0) {
@@ -21,6 +20,6 @@ function year(){
 		document.getElementById("result").innerHTML = input+" is not leap year";
 
 	}
-
-}
+	
+}, false);
 
