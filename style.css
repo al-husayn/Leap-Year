@@ -4,7 +4,7 @@ body {
 	text-align: center;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	/* background-image: linear-gradient(120deg, #fff5eb, #deedf0, #f4c7ab); */
-	background-image: url(/images/1.jpg);
+	background-image: url(/images/3.jpg);
 	min-height: 100vh;
 
 }
@@ -29,11 +29,11 @@ h1 {
 
 label {
 	color: tomato;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 }
 
 #input {
-
+	font-size: 2.5em;
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
@@ -42,6 +42,7 @@ label {
 	box-sizing: border-box;
 	font-size: medium;
 	background-color: #fff5eb;
+	color: tomato;
 }
 
 button {
@@ -61,17 +62,25 @@ button {
 
 
 button:hover {
-	background-color: #ffb9ad;
-	color: tomato;
+	background-color: #ff2903;
+	color: #fff;
 }
 
 #result {
-
+	animation: blinker 1s linear infinite;
 	position: fixed;
 	bottom: 40%;
 	width: 100%;
 	color: tomato;
-	font-size: 3rem;
+	font-size: 4rem;
+	
 
 }
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  
+  }
 
